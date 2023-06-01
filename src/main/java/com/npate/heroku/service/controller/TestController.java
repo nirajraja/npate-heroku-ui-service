@@ -4,6 +4,7 @@ package com.npate.heroku.service.controller;
 import java.util.Random;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -17,6 +18,7 @@ import com.npate.heroku.service.model.TestTableModel;
 import com.npate.heroku.service.repository.GuestRepository;
 import com.npate.heroku.service.repository.RsvpRepository;
 
+@CrossOrigin(origins="https://npate-test-appui.herokuapp.com", allowedHeaders="*")
 @RestController
 @RequestMapping("/api/v1")
 public class TestController {
