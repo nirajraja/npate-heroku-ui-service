@@ -74,7 +74,7 @@ public class TestController {
 	  try {
 		  System.out.print(rsvp);
 		  rsvpRepo.save(rsvp);
-		  return "Saved";
+		  return "{\"status\":\"Saved\"}";
 	  }catch(Exception e) {
 		  
 		  System.out.print(e);
