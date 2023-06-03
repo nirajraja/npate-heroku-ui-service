@@ -98,7 +98,7 @@ public class TestController {
 	public @ResponseBody String validate(@PathVariable String codedUn, @PathVariable String codedPw) {
 		try {
 
-			return "{\"valid\":\"" + validateInfo(codedUn, codedPw) + "\"}";
+			return "{\"valid\":" + validateInfo(codedUn, codedPw) +"}";
 		} catch (Exception e) {
 
 			System.out.print(e);
