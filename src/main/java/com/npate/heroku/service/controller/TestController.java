@@ -23,7 +23,7 @@ import com.npate.heroku.service.model.TestTableModel;
 import com.npate.heroku.service.repository.GuestRepository;
 import com.npate.heroku.service.repository.RsvpRepository;
 
-@CrossOrigin(origins = "https://npate-test-appui.herokuapp.com", allowedHeaders = "*")
+@CrossOrigin(origins = "https://krimasbabyshower-724b3835c709.herokuapp.com", allowedHeaders = "*")
 @RestController
 @RequestMapping("/api/v1")
 public class TestController {
